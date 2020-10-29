@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/phoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showPhone"
+        android:text="@string/show" />
+
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_toLeftOf="@id/emailBtn"
+        android:inputType="phone"
+        android:hint="@string/enter_phone" />
+
+    <Button
+        android:id="@+id/emailBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showEmail"
+        android:text="@string/show" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_toLeftOf="@id/emailBtn"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email" />
+
+    <Button
+        android:id="@+id/textBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showText"
+        android:text="@string/show" />
+
+    <EditText
+        android:id="@+id/textEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_toLeftOf="@id/textBtn"
+        android:inputType="textCapSentences"
+        android:hint="@string/enter" />
+
+    <Button
+        android:id="@+id/passBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentRight="true"
+        android:onClick="showPass"
+        android:text="@string/show" />
+
+    <EditText
+        android:id="@+id/passEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_toLeftOf="@id/passBtn"
+        android:inputType="textPassword"
+        android:hint="Enter Your Password" />
+
+    <Button
+        android:id="@+id/intentSpinnerBtn"
+        android:text="Spinner"
+        android:onClick="Pindah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="700dp"
+        android:text="by : Fana Asy-syifa"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="KEYBOARD SAMPLE"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
